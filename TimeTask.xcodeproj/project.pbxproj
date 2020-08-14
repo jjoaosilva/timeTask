@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2243B1024E6CD6F005AB9FD /* BoredTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */; };
 		A2A79A2F24E6010C00866132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A2E24E6010C00866132 /* AppDelegate.swift */; };
 		A2A79A3124E6010C00866132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A3024E6010C00866132 /* SceneDelegate.swift */; };
 		A2A79A3324E6010C00866132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A3224E6010C00866132 /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredTask.swift; sourceTree = "<group>"; };
 		A2A79A2B24E6010C00866132 /* TimeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A79A2E24E6010C00866132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2A79A3024E6010C00866132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +78,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A2243B0E24E6CD5B005AB9FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		A2A79A2224E6010C00866132 = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +109,7 @@
 		A2A79A2D24E6010C00866132 /* TimeTask */ = {
 			isa = PBXGroup;
 			children = (
+				A2243B0E24E6CD5B005AB9FD /* Model */,
 				A2A79A2E24E6010C00866132 /* AppDelegate.swift */,
 				A2A79A3024E6010C00866132 /* SceneDelegate.swift */,
 				A2A79A3224E6010C00866132 /* ViewController.swift */,
@@ -281,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A2A79A3324E6010C00866132 /* ViewController.swift in Sources */,
+				A2243B1024E6CD6F005AB9FD /* BoredTask.swift in Sources */,
 				A2A79A2F24E6010C00866132 /* AppDelegate.swift in Sources */,
 				A2A79A3124E6010C00866132 /* SceneDelegate.swift in Sources */,
 			);
