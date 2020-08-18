@@ -10,6 +10,6 @@ import Foundation
 
 // In this case, I`m going to use only activity information
 
-struct BoredTask {
+struct BoredTask: Decodable {
     var activity: String
 }

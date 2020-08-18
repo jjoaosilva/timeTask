@@ -76,7 +76,7 @@ extension MyTasksViewController: UITableViewDataSource, UITableViewDelegate {
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return "Hoje"
+        return "Today"
     }
 
 }

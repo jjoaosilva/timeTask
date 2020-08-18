@@ -18,6 +18,8 @@
 		A2A79A3B24E6010F00866132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A79A3924E6010F00866132 /* LaunchScreen.storyboard */; };
 		A2A79A4624E6011000866132 /* TimeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A4524E6011000866132 /* TimeTaskTests.swift */; };
 		A2A79A5124E6011000866132 /* TimeTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A5024E6011000866132 /* TimeTaskUITests.swift */; };
+		A2CE3C1224EC0149001634FF /* BoredAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1124EC0149001634FF /* BoredAPI.swift */; };
+		A2CE3C1524EC05FD001634FF /* BoredApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1424EC05FD001634FF /* BoredApiError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		A2A79A4C24E6011000866132 /* TimeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A79A5024E6011000866132 /* TimeTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTaskUITests.swift; sourceTree = "<group>"; };
 		A2A79A5224E6011000866132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CE3C1124EC0149001634FF /* BoredAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredAPI.swift; sourceTree = "<group>"; };
+		A2CE3C1424EC05FD001634FF /* BoredApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApiError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +135,8 @@
 		A2A79A2D24E6010C00866132 /* TimeTask */ = {
 			isa = PBXGroup;
 			children = (
+				A2CE3C1324EC05E5001634FF /* Enum */,
+				A2CE3C1024EC0135001634FF /* Network */,
 				A20C2F6F24E710A700D81926 /* View */,
 				A22844D624E6DF1700BDA1CA /* Controller */,
 				A2243B0E24E6CD5B005AB9FD /* Model */,
@@ -159,6 +165,22 @@
 				A2A79A5224E6011000866132 /* Info.plist */,
 			);
 			path = TimeTaskUITests;
+			sourceTree = "<group>";
+		};
+		A2CE3C1024EC0135001634FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A2CE3C1124EC0149001634FF /* BoredAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A2CE3C1324EC05E5001634FF /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				A2CE3C1424EC05FD001634FF /* BoredApiError.swift */,
+			);
+			path = Enum;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -318,7 +340,9 @@
 				A2A79A3124E6010C00866132 /* SceneDelegate.swift in Sources */,
 				A25D9B8324EAAED500E93D5F /* Task.swift in Sources */,
 				A25D9B8924EABE4E00E93D5F /* MyTasksViewController.swift in Sources */,
+				A2CE3C1524EC05FD001634FF /* BoredApiError.swift in Sources */,
 				A20C2F7124E710C500D81926 /* MyTasksView.swift in Sources */,
+				A2CE3C1224EC0149001634FF /* BoredAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
