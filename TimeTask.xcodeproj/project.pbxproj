@@ -11,6 +11,9 @@
 		A25D9B8324EAAED500E93D5F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8224EAAED500E93D5F /* Task.swift */; };
 		A25D9B8724EAB19E00E93D5F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */; };
 		A25D9B8924EABE4E00E93D5F /* MyTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */; };
+		A2689CA624EDDA2C002D8C72 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */; };
+		A2689CA824EDDA76002D8C72 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2689CA724EDDA76002D8C72 /* OnboardingCollectionViewCell.swift */; };
+		A2689CAA24EDDDC7002D8C72 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2689CA924EDDDC7002D8C72 /* OnBoarding.swift */; };
 		A2A79A2F24E6010C00866132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A2E24E6010C00866132 /* AppDelegate.swift */; };
 		A2A79A3124E6010C00866132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A3024E6010C00866132 /* SceneDelegate.swift */; };
 		A2A79A3824E6010F00866132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A79A3724E6010F00866132 /* Assets.xcassets */; };
@@ -49,6 +52,9 @@
 		A25D9B8224EAAED500E93D5F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksViewController.swift; sourceTree = "<group>"; };
+		A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A2689CA724EDDA76002D8C72 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2689CA924EDDDC7002D8C72 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
 		A2A79A2B24E6010C00866132 /* TimeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A79A2E24E6010C00866132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2A79A3024E6010C00866132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -102,6 +108,7 @@
 				A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */,
 				A2D9744324ED639C00C88C34 /* NewTaskTableViewCell.swift */,
 				A2CE3C1624EC1399001634FF /* NewTaskView.swift */,
+				A2689CA724EDDA76002D8C72 /* OnboardingCollectionViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -111,6 +118,7 @@
 			children = (
 				A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */,
 				A25D9B8224EAAED500E93D5F /* Task.swift */,
+				A2689CA924EDDDC7002D8C72 /* OnBoarding.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -120,6 +128,7 @@
 			children = (
 				A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */,
 				A2CE3C1824EC1447001634FF /* NewtaskViewController.swift */,
+				A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -360,6 +369,7 @@
 				A25D9B8724EAB19E00E93D5F /* TaskTableViewCell.swift in Sources */,
 				A2243B1024E6CD6F005AB9FD /* BoredTask.swift in Sources */,
 				A2A79A2F24E6010C00866132 /* AppDelegate.swift in Sources */,
+				A2689CA824EDDA76002D8C72 /* OnboardingCollectionViewCell.swift in Sources */,
 				A2D9744924EDAF1300C88C34 /* Forms.swift in Sources */,
 				A2D9744724EDAEBF00C88C34 /* UpdateDataDelegate.swift in Sources */,
 				A2A79A3124E6010C00866132 /* SceneDelegate.swift in Sources */,
@@ -367,6 +377,8 @@
 				A25D9B8924EABE4E00E93D5F /* MyTasksViewController.swift in Sources */,
 				A2CE3C1924EC1447001634FF /* NewtaskViewController.swift in Sources */,
 				A2CE3C1724EC1399001634FF /* NewTaskView.swift in Sources */,
+				A2689CA624EDDA2C002D8C72 /* OnboardingViewController.swift in Sources */,
+				A2689CAA24EDDDC7002D8C72 /* OnBoarding.swift in Sources */,
 				A2CE3C1524EC05FD001634FF /* BoredApiError.swift in Sources */,
 				A2D9744424ED639C00C88C34 /* NewTaskTableViewCell.swift in Sources */,
 				A2CE3C1C24EC90C2001634FF /* NewTaskDelegate.swift in Sources */,

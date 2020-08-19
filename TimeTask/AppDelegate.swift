@@ -16,15 +16,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         window = UIWindow(frame: UIScreen.main.bounds)
+
         let navigation = UINavigationController()
+        let hasSeenOnboard = UserDefaults.standard.bool(forKey: "hasSeenOnboard")
 
-        navigation.navigationBar.barTintColor = .systemBackground
-        navigation.navigationBar.isTranslucent = true
-        navigation.navigationBar.shadowImage = UIImage()
+        if !hasSeenOnboard {
+            window?.rootViewController = OnboardingViewController()
+        } else {
+            navigation.navigationBar.barTintColor = .systemBackground
+            navigation.navigationBar.isTranslucent = true
+            navigation.navigationBar.shadowImage = UIImage()
 
-        let mainViewController = MyTasksViewController()
-        navigation.viewControllers = [mainViewController]
-        window?.rootViewController = navigation
+            let mainViewController = MyTasksViewController()
+            navigation.viewControllers = [mainViewController]
+            window?.rootViewController = navigation
+        }
         window?.makeKeyAndVisible()
         // Override point for customization after application launch.
         return true

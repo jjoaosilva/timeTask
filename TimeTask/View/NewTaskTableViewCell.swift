@@ -51,7 +51,7 @@ class NewTaskTableViewCell: UITableViewCell {
         self.identifier = identifier
     }
 
-    @objc func updateTextField(textField: UITextField){
+    @objc func updateTextField(textField: UITextField) {
         if let text = textField.text, let identifier = self.identifier {
             self.delegate?.updateData(value: text, identifier: identifier)
         }
