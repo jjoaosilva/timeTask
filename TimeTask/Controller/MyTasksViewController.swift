@@ -57,11 +57,13 @@ class MyTasksViewController: UIViewController {
     }
 
     @objc func addTaskButtonWasTapped() {
-        tableView.beginUpdates()
-        characters.insert("teste", at: 0)
-        tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .left)
-        tableView.endUpdates()
+        let newTask = NewtaskViewController()
+        newTask.delegate = self
+
+        let navController = UINavigationController(rootViewController: newTask)
+        self.navigationController?.present(navController, animated: true, completion: nil)
     }
+
 }
 
 extension MyTasksViewController: UITableViewDataSource, UITableViewDelegate {
@@ -79,4 +81,13 @@ extension MyTasksViewController: UITableViewDataSource, UITableViewDelegate {
         return "Today"
     }
 
+}
+
+extension MyTasksViewController: NewTaskDelegate {
+    func createNewTask(create with: (task: String, description: String)) {
+        self.tableView.beginUpdates()
+        self.characters.insert(with.task, at: 0)
+        self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .left)
+        self.tableView.endUpdates()
+    }
 }

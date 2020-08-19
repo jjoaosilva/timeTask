@@ -39,7 +39,7 @@ class TaskTableViewCell: UITableViewCell {
         return view
     }()
 
-    var status: Task = Task(activity: "", check: false)
+    var status: Task = Task(activity: "", description: "", check: false)
 
     override func prepareForReuse() {
         label.text = nil

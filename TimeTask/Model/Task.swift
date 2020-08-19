@@ -10,5 +10,6 @@ import Foundation
 
 struct Task {
     var activity: String
+    var description: String
     var check: Bool
 }
