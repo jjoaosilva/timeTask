@@ -31,6 +31,8 @@ class OnboardingViewController: UIViewController {
         let pageControl = UIPageControl()
         pageControl.hidesForSinglePage = true
         pageControl.translatesAutoresizingMaskIntoConstraints = false
+        pageControl.pageIndicatorTintColor = .systemGray
+        pageControl.currentPageIndicatorTintColor = .label
         return pageControl
     }()
 
