@@ -50,7 +50,8 @@ class NewtaskViewController: UIViewController {
     }
 
     @objc func done() {
-        delegate?.createNewTask(create: (task: newTaskViewInstance.titleTask, description: newTaskViewInstance.descriptionTask))
+        let task = Task(activity: newTaskViewInstance.titleTask, description: newTaskViewInstance.descriptionTask, check: false)
+        delegate?.createNewTask(create: task)
         self.dismiss(animated: true, completion: nil)
     }
 }

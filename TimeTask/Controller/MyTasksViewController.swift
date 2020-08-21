@@ -18,7 +18,12 @@ class MyTasksViewController: UIViewController {
         return tableView
     }()
 
-    var characters = ["Link", "Zelda", "Ganondorf", "Midna"]
+    var characters: [Task] = [Task(activity: "Do 01 Screen", description: "Do this screen 1 =(", check: false),
+                      Task(activity: "Do 02 Screen", description: "Do this screen 2 =(", check: false),
+                      Task(activity: "Do 03 Screen", description: "Do this screen 3 =(", check: false),
+                      Task(activity: "Do 04 Screen", description: "Do this screen 4 =(", check: false),
+                      Task(activity: "Do 05 Screen", description: "Do this screen 5 =(", check: false)
+    ]
 
     override func loadView() {
         super.loadView()
@@ -47,13 +52,12 @@ class MyTasksViewController: UIViewController {
 
     private func setup() {
         view.addSubview(tableView)
-
         tableView.register(TaskTableViewCell.self, forCellReuseIdentifier: TaskTableViewCell.reuseIdentifier)
 
         tableView.dataSource = self
         tableView.delegate = self
 
-        tableView.allowsSelection = false
+        tableView.allowsSelection = true
     }
 
     @objc func addTaskButtonWasTapped() {
@@ -81,12 +85,20 @@ extension MyTasksViewController: UITableViewDataSource, UITableViewDelegate {
         return "Today"
     }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let timeTask = TimeTaskViewController()
+
+        timeTask.titleTask = characters[indexPath.row].activity
+        timeTask.descriptionTask = characters[indexPath.row].description
+        self.navigationController?.pushViewController(timeTask, animated: true)
+    }
+
 }
 
 extension MyTasksViewController: NewTaskDelegate {
-    func createNewTask(create with: (task: String, description: String)) {
+    func createNewTask(create with: Task) {
         self.tableView.beginUpdates()
-        self.characters.insert(with.task, at: 0)
+        self.characters.insert(with, at: 0)
         self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .left)
         self.tableView.endUpdates()
     }

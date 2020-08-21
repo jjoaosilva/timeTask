@@ -59,6 +59,8 @@ class TaskTableViewCell: UITableViewCell {
         self.addSubview(button)
         self.addSubview(checkView)
 
+        self.selectionStyle = .none
+
         NSLayoutConstraint.activate([
             button.centerYAnchor.constraint(equalTo: self.centerYAnchor),
             button.leftAnchor.constraint(equalTo: self.leftAnchor, constant: 24),
@@ -94,7 +96,7 @@ class TaskTableViewCell: UITableViewCell {
         label.textColor = status.check ? .systemGray : .none
     }
 
-    func configure(with task: String) {
-        self.label.text = task
+    func configure(with task: Task) {
+        self.label.text = task.activity
     }
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol NewTaskDelegate: class {
-    func createNewTask(create with: (task: String, description: String))
+    func createNewTask(create with: Task)
 }

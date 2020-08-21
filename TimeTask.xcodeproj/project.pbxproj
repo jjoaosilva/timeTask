@@ -8,12 +8,17 @@
 
 /* Begin PBXBuildFile section */
 		A2243B1024E6CD6F005AB9FD /* BoredTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */; };
+		A22C016424EFEDAF00986E7F /* StatusTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C016324EFEDAF00986E7F /* StatusTimer.swift */; };
+		A22C016624F03EFB00986E7F /* TimeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C016524F03EFB00986E7F /* TimeDelegate.swift */; };
 		A25D9B8324EAAED500E93D5F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8224EAAED500E93D5F /* Task.swift */; };
 		A25D9B8724EAB19E00E93D5F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */; };
 		A25D9B8924EABE4E00E93D5F /* MyTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */; };
 		A2689CA624EDDA2C002D8C72 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */; };
 		A2689CA824EDDA76002D8C72 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2689CA724EDDA76002D8C72 /* OnboardingCollectionViewCell.swift */; };
 		A2689CAA24EDDDC7002D8C72 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2689CA924EDDDC7002D8C72 /* OnBoarding.swift */; };
+		A275453D24EEAE0300E2D9BE /* TimeTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A275453C24EEAE0300E2D9BE /* TimeTaskViewController.swift */; };
+		A275453F24EEAFE400E2D9BE /* TimeTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A275453E24EEAFE400E2D9BE /* TimeTaskView.swift */; };
+		A275454224EF338E00E2D9BE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A275454124EF338E00E2D9BE /* TimerView.swift */; };
 		A2A79A2F24E6010C00866132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A2E24E6010C00866132 /* AppDelegate.swift */; };
 		A2A79A3124E6010C00866132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A3024E6010C00866132 /* SceneDelegate.swift */; };
 		A2A79A3824E6010F00866132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A79A3724E6010F00866132 /* Assets.xcassets */; };
@@ -49,12 +54,17 @@
 
 /* Begin PBXFileReference section */
 		A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredTask.swift; sourceTree = "<group>"; };
+		A22C016324EFEDAF00986E7F /* StatusTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTimer.swift; sourceTree = "<group>"; };
+		A22C016524F03EFB00986E7F /* TimeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDelegate.swift; sourceTree = "<group>"; };
 		A25D9B8224EAAED500E93D5F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksViewController.swift; sourceTree = "<group>"; };
 		A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		A2689CA724EDDA76002D8C72 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
 		A2689CA924EDDDC7002D8C72 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		A275453C24EEAE0300E2D9BE /* TimeTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTaskViewController.swift; sourceTree = "<group>"; };
+		A275453E24EEAFE400E2D9BE /* TimeTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTaskView.swift; sourceTree = "<group>"; };
+		A275454124EF338E00E2D9BE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		A2A79A2B24E6010C00866132 /* TimeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A79A2E24E6010C00866132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2A79A3024E6010C00866132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -109,6 +119,8 @@
 				A2D9744324ED639C00C88C34 /* NewTaskTableViewCell.swift */,
 				A2CE3C1624EC1399001634FF /* NewTaskView.swift */,
 				A2689CA724EDDA76002D8C72 /* OnboardingCollectionViewCell.swift */,
+				A275453E24EEAFE400E2D9BE /* TimeTaskView.swift */,
+				A275454124EF338E00E2D9BE /* TimerView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -129,6 +141,7 @@
 				A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */,
 				A2CE3C1824EC1447001634FF /* NewtaskViewController.swift */,
 				A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */,
+				A275453C24EEAE0300E2D9BE /* TimeTaskViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -202,6 +215,7 @@
 			children = (
 				A2CE3C1424EC05FD001634FF /* BoredApiError.swift */,
 				A2D9744824EDAF1300C88C34 /* Forms.swift */,
+				A22C016324EFEDAF00986E7F /* StatusTimer.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -211,6 +225,7 @@
 			children = (
 				A2CE3C1B24EC90C2001634FF /* NewTaskDelegate.swift */,
 				A2D9744624EDAEBF00C88C34 /* UpdateDataDelegate.swift */,
+				A22C016524F03EFB00986E7F /* TimeDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -367,6 +382,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A25D9B8724EAB19E00E93D5F /* TaskTableViewCell.swift in Sources */,
+				A22C016624F03EFB00986E7F /* TimeDelegate.swift in Sources */,
 				A2243B1024E6CD6F005AB9FD /* BoredTask.swift in Sources */,
 				A2A79A2F24E6010C00866132 /* AppDelegate.swift in Sources */,
 				A2689CA824EDDA76002D8C72 /* OnboardingCollectionViewCell.swift in Sources */,
@@ -376,8 +392,12 @@
 				A25D9B8324EAAED500E93D5F /* Task.swift in Sources */,
 				A25D9B8924EABE4E00E93D5F /* MyTasksViewController.swift in Sources */,
 				A2CE3C1924EC1447001634FF /* NewtaskViewController.swift in Sources */,
+				A22C016424EFEDAF00986E7F /* StatusTimer.swift in Sources */,
+				A275454224EF338E00E2D9BE /* TimerView.swift in Sources */,
 				A2CE3C1724EC1399001634FF /* NewTaskView.swift in Sources */,
+				A275453F24EEAFE400E2D9BE /* TimeTaskView.swift in Sources */,
 				A2689CA624EDDA2C002D8C72 /* OnboardingViewController.swift in Sources */,
+				A275453D24EEAE0300E2D9BE /* TimeTaskViewController.swift in Sources */,
 				A2689CAA24EDDDC7002D8C72 /* OnBoarding.swift in Sources */,
 				A2CE3C1524EC05FD001634FF /* BoredApiError.swift in Sources */,
 				A2D9744424ED639C00C88C34 /* NewTaskTableViewCell.swift in Sources */,
