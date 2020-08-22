@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Task {
+struct Task: Codable {
     var activity: String
     var description: String
     var check: Bool

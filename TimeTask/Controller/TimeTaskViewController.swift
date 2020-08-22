@@ -16,7 +16,7 @@ class TimeTaskViewController: UIViewController {
     var descriptionTask: String = String()
 
     let inicialTime = 0
-    var timer = Timer()
+    var timer: Timer = Timer()
     var isTimerRunning = false
     var timerTaskView = TimeTaskView()
 
@@ -44,19 +44,16 @@ class TimeTaskViewController: UIViewController {
 
     func pauseTimer() {
         timer.invalidate()
+        isTimerRunning = false
     }
 
     func cancelTimer() {
         timer.invalidate()
-        self.seconds = self.inicialTime
+        isTimerRunning = false
     }
 
     @objc func updateTimer() {
-        if seconds < 1 {
-            self.cancelTimer()
-        } else {
             seconds -= 1
-        }
     }
 
     private func configurateNavigation() {
@@ -67,8 +64,11 @@ class TimeTaskViewController: UIViewController {
 
 extension TimeTaskViewController: TimeDelegate {
     func start(with time: Int) {
-        self.seconds = time
-        self.playTimer()
+        if !isTimerRunning {
+            self.seconds = time
+            self.playTimer()
+            self.isTimerRunning = true
+        }
     }
 
     func pause() {
@@ -76,7 +76,10 @@ extension TimeTaskViewController: TimeDelegate {
     }
 
     func resume() {
-        self.playTimer()
+        if !isTimerRunning {
+            self.playTimer()
+            isTimerRunning = true
+        }
     }
 
     func cancel() {

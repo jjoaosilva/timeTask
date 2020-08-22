@@ -99,6 +99,7 @@ class TimeTaskView: UIView {
 
                 self.timerView.isHidden = true
                 self.pickerView.isHidden = false
+                self.delegate?.cancel()
             }
         }
     }
