@@ -24,6 +24,7 @@ class OnboardingCollectionViewCell: UICollectionViewCell {
     let descriptionOnboard: UILabel = {
         let label = UILabel()
         label.numberOfLines = 0
+        label.font = UIFont.systemFont(ofSize: 24, weight: .regular)
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textAlignment = .center
         return label

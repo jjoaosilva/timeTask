@@ -8,8 +8,6 @@
 
 import Foundation
 
-// swiftlint:disable line_length
-
 struct Onboard {
     var image: String
     var subtitle: String
@@ -17,9 +15,9 @@ struct Onboard {
 
     static func mockOnboard() -> [Onboard] {
         return [
-            Onboard(image: "page01Onboarding", subtitle: "Adicione suas tarefas", buttonTitle: "Próximo"),
-            Onboard(image: "page02Onboarding", subtitle: "Organize seu tempo", buttonTitle: "Próximo"),
-            Onboard(image: "page03Onboarding", subtitle: "Ao fim, conclua suas tarefas no seu ritmo", buttonTitle: "Começar")
+            Onboard(image: "page01Onboarding", subtitle: "Add your tasks", buttonTitle: "Next"),
+            Onboard(image: "page02Onboarding", subtitle: "Organize your time", buttonTitle: "Next"),
+            Onboard(image: "page03Onboarding", subtitle: "Complete your tasks at your own pace", buttonTitle: "Start")
         ]
     }
 }
