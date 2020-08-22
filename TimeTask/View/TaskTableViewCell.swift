@@ -40,6 +40,8 @@ class TaskTableViewCell: UITableViewCell {
     }()
 
     var status: Task = Task(activity: "", description: "", check: false)
+    var indexPath: IndexPath = IndexPath()
+    weak var delegate: ManageTaskDelegate?
 
     override func prepareForReuse() {
         label.text = nil
@@ -79,9 +81,16 @@ class TaskTableViewCell: UITableViewCell {
 
     @objc private func checkButtonWasTapped() {
         status.check = !status.check
+        setupMarkLayout()
+        self.delegate?.manageTask(indexPath: self.indexPath, task: self.status)
+    }
+
+    private func setupMarkLayout() {
         let iconName = status.check ? "checkmark.circle.fill" : "circle"
         let icon = UIImage(systemName: iconName, withConfiguration: UIImage.SymbolConfiguration(scale: .large))
         button.setImage(icon, for: .normal)
+
+        label.textColor = status.check ? .systemGray : .none
 
         if status.check {
             UIView.animate(withDuration: 0.5, animations: {
@@ -92,11 +101,13 @@ class TaskTableViewCell: UITableViewCell {
                 self.checkView.backgroundColor = .none
             })
         }
-
-        label.textColor = status.check ? .systemGray : .none
     }
 
-    func configure(with task: Task) {
+    func configure(with task: Task, indexPath: IndexPath) {
         self.label.text = task.activity
+        self.status = task
+        self.indexPath = indexPath
+
+        setupMarkLayout()
     }
 }

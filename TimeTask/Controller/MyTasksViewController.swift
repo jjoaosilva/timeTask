@@ -25,12 +25,7 @@ class MyTasksViewController: UIViewController {
         return noneTask
     }()
 
-    var characters: [Task] = [Task(activity: "Do 01 Screen", description: "Do this screen 1 =(", check: false),
-                      Task(activity: "Do 02 Screen", description: "Do this screen 2 =(", check: false),
-                      Task(activity: "Do 03 Screen", description: "Do this screen 3 =(", check: false),
-                      Task(activity: "Do 04 Screen", description: "Do this screen 4 =(", check: false),
-                      Task(activity: "Do 05 Screen", description: "Do this screen 5 =(", check: false)
-        ] {
+    var tasks: [Task] = [Task]() {
         didSet {
             configureView()
         }
@@ -38,10 +33,23 @@ class MyTasksViewController: UIViewController {
 
     override func loadView() {
         super.loadView()
+
+        getTasksFileManager()
+
         setup()
         setupLayout()
         setupNavigationBar()
         configureView()
+    }
+
+    private func getTasksFileManager() {
+        let tasks = ManageFileTasks.readMealDataFromFile()
+
+        if let tasks = tasks {
+            self.tasks = tasks
+        } else {
+            self.tasks = [Task]()
+        }
     }
 
     private func setupNavigationBar() {
@@ -53,7 +61,7 @@ class MyTasksViewController: UIViewController {
     }
 
     private func configureView() {
-        let isEmpty = characters.isEmpty
+        let isEmpty = tasks.isEmpty
 
         self.tableView.isHidden = isEmpty
         self.noneTask.isHidden = !isEmpty
@@ -86,8 +94,13 @@ class MyTasksViewController: UIViewController {
 
     private func deleteTask(indexPath: IndexPath) {
         tableView.beginUpdates()
-        characters.remove(at: indexPath.row )
-        tableView.deleteRows(at: [indexPath], with: .right)
+        let task = tasks.remove(at: indexPath.row )
+
+        if ManageFileTasks.updateMealDataFile(data: tasks) != nil {
+            tableView.deleteRows(at: [indexPath], with: .right)
+        } else {
+            self.tasks.insert(task, at: indexPath.row)
+        }
         tableView.endUpdates()
     }
 
@@ -103,12 +116,13 @@ class MyTasksViewController: UIViewController {
 
 extension MyTasksViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return characters.count
+        return tasks.count
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TaskTableViewCell.reuseIdentifier, for: indexPath) as! TaskTableViewCell
-        cell.configure(with: characters[indexPath.row])
+        cell.configure(with: tasks[indexPath.row], indexPath: indexPath)
+        cell.delegate = self
         return cell
     }
 
@@ -119,8 +133,8 @@ extension MyTasksViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let timeTask = TimeTaskViewController()
 
-        timeTask.titleTask = characters[indexPath.row].activity
-        timeTask.descriptionTask = characters[indexPath.row].description
+        timeTask.titleTask = tasks[indexPath.row].activity
+        timeTask.descriptionTask = tasks[indexPath.row].description
         self.navigationController?.pushViewController(timeTask, animated: true)
     }
 
@@ -139,8 +153,20 @@ extension MyTasksViewController: UITableViewDataSource, UITableViewDelegate {
 extension MyTasksViewController: NewTaskDelegate {
     func createNewTask(create with: Task) {
         self.tableView.beginUpdates()
-        self.characters.insert(with, at: 0)
-        self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .left)
+        self.tasks.insert(with, at: 0)
+
+        if ManageFileTasks.updateMealDataFile(data: tasks)  != nil {
+            self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .left)
+        } else {
+            self.tasks.remove(at: 0)
+        }
         self.tableView.endUpdates()
+    }
+}
+
+extension MyTasksViewController: ManageTaskDelegate {
+    func manageTask(indexPath: IndexPath, task: Task) {
+        self.tasks[indexPath.row] = task
+        _ = ManageFileTasks.updateMealDataFile(data: tasks)
     }
 }

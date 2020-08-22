@@ -8,26 +8,28 @@
 
 import Foundation
 
-func createMealNewFile(data: [Task]) {
-    if let data = try? JSONEncoder().encode(data) {
-        FileController().createFile(with: data, name: "TaskData.Json")
+struct ManageFileTasks {
+    static func createMealNewFile(data: [Task]) {
+        if let data = try? JSONEncoder().encode(data) {
+            FileController().createFile(with: data, name: "TaskData.Json")
+        }
     }
-}
 
-func readMealDataFromFile() -> [Task]? {
+    static func readMealDataFromFile() -> [Task]? {
 
-    if let data = FileController().retrieveFile(at: "TaskData.Json") {
-        let allmeals = try? JSONDecoder().decode([Task].self, from: data)
-        return allmeals
+        if let data = FileController().retrieveFile(at: "TaskData.Json") {
+            let allmeals = try? JSONDecoder().decode([Task].self, from: data)
+            return allmeals
+        }
+        return nil
     }
-    return nil
-}
 
-func updateMealDataFile(data: [Task]) -> Data? {
+    static func updateMealDataFile(data: [Task]) -> Data? {
 
-    if let data = try? JSONEncoder().encode(data) {
-        FileController().updateFile(at: "TaskData.Json", data: data)
-        return data
+        if let data = try? JSONEncoder().encode(data) {
+            FileController().updateFile(at: "TaskData.Json", data: data)
+            return data
+        }
+        return nil
     }
-    return nil
 }

@@ -13,6 +13,7 @@
 		A22C016924F067D900986E7F /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C016824F067D900986E7F /* FileController.swift */; };
 		A23CD51324F1B2DD00AC7886 /* ManageFileTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD51224F1B2DD00AC7886 /* ManageFileTasks.swift */; };
 		A23CD51724F1C40500AC7886 /* NoneTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD51624F1C40500AC7886 /* NoneTaskView.swift */; };
+		A23CD51B24F1D85F00AC7886 /* ManageTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD51A24F1D85F00AC7886 /* ManageTaskDelegate.swift */; };
 		A25D9B8324EAAED500E93D5F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8224EAAED500E93D5F /* Task.swift */; };
 		A25D9B8724EAB19E00E93D5F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */; };
 		A25D9B8924EABE4E00E93D5F /* MyTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */; };
@@ -62,6 +63,7 @@
 		A22C016824F067D900986E7F /* FileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
 		A23CD51224F1B2DD00AC7886 /* ManageFileTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageFileTasks.swift; sourceTree = "<group>"; };
 		A23CD51624F1C40500AC7886 /* NoneTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneTaskView.swift; sourceTree = "<group>"; };
+		A23CD51A24F1D85F00AC7886 /* ManageTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTaskDelegate.swift; sourceTree = "<group>"; };
 		A25D9B8224EAAED500E93D5F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
 		A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
 		A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksViewController.swift; sourceTree = "<group>"; };
@@ -243,6 +245,7 @@
 				A2CE3C1B24EC90C2001634FF /* NewTaskDelegate.swift */,
 				A2D9744624EDAEBF00C88C34 /* UpdateDataDelegate.swift */,
 				A22C016524F03EFB00986E7F /* TimeDelegate.swift */,
+				A23CD51A24F1D85F00AC7886 /* ManageTaskDelegate.swift */,
 			);
 			path = Protocols;
 			sourceTree = "<group>";
@@ -410,6 +413,7 @@
 				A25D9B8324EAAED500E93D5F /* Task.swift in Sources */,
 				A22C016924F067D900986E7F /* FileController.swift in Sources */,
 				A25D9B8924EABE4E00E93D5F /* MyTasksViewController.swift in Sources */,
+				A23CD51B24F1D85F00AC7886 /* ManageTaskDelegate.swift in Sources */,
 				A2CE3C1924EC1447001634FF /* NewtaskViewController.swift in Sources */,
 				A22C016424EFEDAF00986E7F /* StatusTimer.swift in Sources */,
 				A275454224EF338E00E2D9BE /* TimerView.swift in Sources */,
