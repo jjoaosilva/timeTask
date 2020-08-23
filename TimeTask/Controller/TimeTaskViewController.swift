@@ -53,7 +53,7 @@ class TimeTaskViewController: UIViewController {
     }
 
     @objc func updateTimer() {
-            seconds -= 1
+        seconds -= 1
     }
 
     private func configurateNavigation() {

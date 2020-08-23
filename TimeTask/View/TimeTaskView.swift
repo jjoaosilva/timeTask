@@ -252,6 +252,8 @@ class TimeTaskView: UIView {
 
         self.pickerView.isHidden = false
         self.timerView.isHidden = true
+
+        timerView.setAnimation(with: animatingCircle(fromValue: 0, toValue: 1, duration: 0))
         delegate?.cancel()
     }
 
