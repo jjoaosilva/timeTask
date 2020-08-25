@@ -8,7 +8,7 @@
 
 import Foundation
 
-struct Onboard {
+struct Onboard: Equatable {
     var image: String
     var subtitle: String
     var buttonTitle: String
