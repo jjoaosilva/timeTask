@@ -7,14 +7,36 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A2243B1024E6CD6F005AB9FD /* BoredTask.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */; };
+		A22C016424EFEDAF00986E7F /* StatusTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C016324EFEDAF00986E7F /* StatusTimer.swift */; };
+		A22C016624F03EFB00986E7F /* TimeDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C016524F03EFB00986E7F /* TimeDelegate.swift */; };
+		A22C016924F067D900986E7F /* FileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A22C016824F067D900986E7F /* FileController.swift */; };
+		A23CD51324F1B2DD00AC7886 /* ManageFileTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD51224F1B2DD00AC7886 /* ManageFileTasks.swift */; };
+		A23CD51724F1C40500AC7886 /* NoneTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD51624F1C40500AC7886 /* NoneTaskView.swift */; };
+		A23CD51B24F1D85F00AC7886 /* ManageTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A23CD51A24F1D85F00AC7886 /* ManageTaskDelegate.swift */; };
+		A25D9B8324EAAED500E93D5F /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8224EAAED500E93D5F /* Task.swift */; };
+		A25D9B8724EAB19E00E93D5F /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */; };
+		A25D9B8924EABE4E00E93D5F /* MyTasksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */; };
+		A2689CA624EDDA2C002D8C72 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */; };
+		A2689CA824EDDA76002D8C72 /* OnboardingCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2689CA724EDDA76002D8C72 /* OnboardingCollectionViewCell.swift */; };
+		A2689CAA24EDDDC7002D8C72 /* OnBoarding.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2689CA924EDDDC7002D8C72 /* OnBoarding.swift */; };
+		A275453D24EEAE0300E2D9BE /* TimeTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A275453C24EEAE0300E2D9BE /* TimeTaskViewController.swift */; };
+		A275453F24EEAFE400E2D9BE /* TimeTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A275453E24EEAFE400E2D9BE /* TimeTaskView.swift */; };
+		A275454224EF338E00E2D9BE /* TimerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A275454124EF338E00E2D9BE /* TimerView.swift */; };
 		A2A79A2F24E6010C00866132 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A2E24E6010C00866132 /* AppDelegate.swift */; };
 		A2A79A3124E6010C00866132 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A3024E6010C00866132 /* SceneDelegate.swift */; };
-		A2A79A3324E6010C00866132 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A3224E6010C00866132 /* ViewController.swift */; };
-		A2A79A3624E6010C00866132 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A79A3424E6010C00866132 /* Main.storyboard */; };
 		A2A79A3824E6010F00866132 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2A79A3724E6010F00866132 /* Assets.xcassets */; };
 		A2A79A3B24E6010F00866132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A79A3924E6010F00866132 /* LaunchScreen.storyboard */; };
 		A2A79A4624E6011000866132 /* TimeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A4524E6011000866132 /* TimeTaskTests.swift */; };
 		A2A79A5124E6011000866132 /* TimeTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A5024E6011000866132 /* TimeTaskUITests.swift */; };
+		A2CE3C1224EC0149001634FF /* BoredAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1124EC0149001634FF /* BoredAPI.swift */; };
+		A2CE3C1524EC05FD001634FF /* BoredApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1424EC05FD001634FF /* BoredApiError.swift */; };
+		A2CE3C1724EC1399001634FF /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1624EC1399001634FF /* NewTaskView.swift */; };
+		A2CE3C1924EC1447001634FF /* NewtaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1824EC1447001634FF /* NewtaskViewController.swift */; };
+		A2CE3C1C24EC90C2001634FF /* NewTaskDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1B24EC90C2001634FF /* NewTaskDelegate.swift */; };
+		A2D9744424ED639C00C88C34 /* NewTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9744324ED639C00C88C34 /* NewTaskTableViewCell.swift */; };
+		A2D9744724EDAEBF00C88C34 /* UpdateDataDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9744624EDAEBF00C88C34 /* UpdateDataDelegate.swift */; };
+		A2D9744924EDAF1300C88C34 /* Forms.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D9744824EDAF1300C88C34 /* Forms.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +57,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredTask.swift; sourceTree = "<group>"; };
+		A22C016324EFEDAF00986E7F /* StatusTimer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusTimer.swift; sourceTree = "<group>"; };
+		A22C016524F03EFB00986E7F /* TimeDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeDelegate.swift; sourceTree = "<group>"; };
+		A22C016824F067D900986E7F /* FileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileController.swift; sourceTree = "<group>"; };
+		A23CD51224F1B2DD00AC7886 /* ManageFileTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageFileTasks.swift; sourceTree = "<group>"; };
+		A23CD51624F1C40500AC7886 /* NoneTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoneTaskView.swift; sourceTree = "<group>"; };
+		A23CD51A24F1D85F00AC7886 /* ManageTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManageTaskDelegate.swift; sourceTree = "<group>"; };
+		A25D9B8224EAAED500E93D5F /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTasksViewController.swift; sourceTree = "<group>"; };
+		A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A2689CA724EDDA76002D8C72 /* OnboardingCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingCollectionViewCell.swift; sourceTree = "<group>"; };
+		A2689CA924EDDDC7002D8C72 /* OnBoarding.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoarding.swift; sourceTree = "<group>"; };
+		A275453C24EEAE0300E2D9BE /* TimeTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTaskViewController.swift; sourceTree = "<group>"; };
+		A275453E24EEAFE400E2D9BE /* TimeTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTaskView.swift; sourceTree = "<group>"; };
+		A275454124EF338E00E2D9BE /* TimerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerView.swift; sourceTree = "<group>"; };
 		A2A79A2B24E6010C00866132 /* TimeTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TimeTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A79A2E24E6010C00866132 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2A79A3024E6010C00866132 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A2A79A3224E6010C00866132 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		A2A79A3524E6010C00866132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A2A79A3724E6010F00866132 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A2A79A3A24E6010F00866132 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2A79A3C24E6010F00866132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -49,6 +85,14 @@
 		A2A79A4C24E6011000866132 /* TimeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A79A5024E6011000866132 /* TimeTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTaskUITests.swift; sourceTree = "<group>"; };
 		A2A79A5224E6011000866132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2CE3C1124EC0149001634FF /* BoredAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredAPI.swift; sourceTree = "<group>"; };
+		A2CE3C1424EC05FD001634FF /* BoredApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApiError.swift; sourceTree = "<group>"; };
+		A2CE3C1624EC1399001634FF /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
+		A2CE3C1824EC1447001634FF /* NewtaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewtaskViewController.swift; sourceTree = "<group>"; };
+		A2CE3C1B24EC90C2001634FF /* NewTaskDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskDelegate.swift; sourceTree = "<group>"; };
+		A2D9744324ED639C00C88C34 /* NewTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskTableViewCell.swift; sourceTree = "<group>"; };
+		A2D9744624EDAEBF00C88C34 /* UpdateDataDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpdateDataDelegate.swift; sourceTree = "<group>"; };
+		A2D9744824EDAF1300C88C34 /* Forms.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forms.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +120,50 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A20C2F6F24E710A700D81926 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A25D9B8624EAB19E00E93D5F /* TaskTableViewCell.swift */,
+				A2D9744324ED639C00C88C34 /* NewTaskTableViewCell.swift */,
+				A2CE3C1624EC1399001634FF /* NewTaskView.swift */,
+				A2689CA724EDDA76002D8C72 /* OnboardingCollectionViewCell.swift */,
+				A275453E24EEAFE400E2D9BE /* TimeTaskView.swift */,
+				A275454124EF338E00E2D9BE /* TimerView.swift */,
+				A23CD51624F1C40500AC7886 /* NoneTaskView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A2243B0E24E6CD5B005AB9FD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */,
+				A25D9B8224EAAED500E93D5F /* Task.swift */,
+				A2689CA924EDDDC7002D8C72 /* OnBoarding.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A22844D624E6DF1700BDA1CA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A25D9B8824EABE4E00E93D5F /* MyTasksViewController.swift */,
+				A2CE3C1824EC1447001634FF /* NewtaskViewController.swift */,
+				A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */,
+				A275453C24EEAE0300E2D9BE /* TimeTaskViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A22C016724F0676E00986E7F /* FileManager */ = {
+			isa = PBXGroup;
+			children = (
+				A22C016824F067D900986E7F /* FileController.swift */,
+				A23CD51224F1B2DD00AC7886 /* ManageFileTasks.swift */,
+			);
+			path = FileManager;
+			sourceTree = "<group>";
+		};
 		A2A79A2224E6010C00866132 = {
 			isa = PBXGroup;
 			children = (
@@ -99,10 +187,15 @@
 		A2A79A2D24E6010C00866132 /* TimeTask */ = {
 			isa = PBXGroup;
 			children = (
+				A22C016724F0676E00986E7F /* FileManager */,
+				A2CE3C1A24EC909C001634FF /* Protocols */,
+				A2CE3C1324EC05E5001634FF /* Enum */,
+				A2CE3C1024EC0135001634FF /* Network */,
+				A20C2F6F24E710A700D81926 /* View */,
+				A22844D624E6DF1700BDA1CA /* Controller */,
+				A2243B0E24E6CD5B005AB9FD /* Model */,
 				A2A79A2E24E6010C00866132 /* AppDelegate.swift */,
 				A2A79A3024E6010C00866132 /* SceneDelegate.swift */,
-				A2A79A3224E6010C00866132 /* ViewController.swift */,
-				A2A79A3424E6010C00866132 /* Main.storyboard */,
 				A2A79A3724E6010F00866132 /* Assets.xcassets */,
 				A2A79A3924E6010F00866132 /* LaunchScreen.storyboard */,
 				A2A79A3C24E6010F00866132 /* Info.plist */,
@@ -126,6 +219,35 @@
 				A2A79A5224E6011000866132 /* Info.plist */,
 			);
 			path = TimeTaskUITests;
+			sourceTree = "<group>";
+		};
+		A2CE3C1024EC0135001634FF /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				A2CE3C1124EC0149001634FF /* BoredAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		A2CE3C1324EC05E5001634FF /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				A2CE3C1424EC05FD001634FF /* BoredApiError.swift */,
+				A2D9744824EDAF1300C88C34 /* Forms.swift */,
+				A22C016324EFEDAF00986E7F /* StatusTimer.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		A2CE3C1A24EC909C001634FF /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A2CE3C1B24EC90C2001634FF /* NewTaskDelegate.swift */,
+				A2D9744624EDAEBF00C88C34 /* UpdateDataDelegate.swift */,
+				A22C016524F03EFB00986E7F /* TimeDelegate.swift */,
+				A23CD51A24F1D85F00AC7886 /* ManageTaskDelegate.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,7 +357,6 @@
 			files = (
 				A2A79A3B24E6010F00866132 /* LaunchScreen.storyboard in Resources */,
 				A2A79A3824E6010F00866132 /* Assets.xcassets in Resources */,
-				A2A79A3624E6010C00866132 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,9 +401,32 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2A79A3324E6010C00866132 /* ViewController.swift in Sources */,
+				A23CD51324F1B2DD00AC7886 /* ManageFileTasks.swift in Sources */,
+				A25D9B8724EAB19E00E93D5F /* TaskTableViewCell.swift in Sources */,
+				A22C016624F03EFB00986E7F /* TimeDelegate.swift in Sources */,
+				A2243B1024E6CD6F005AB9FD /* BoredTask.swift in Sources */,
 				A2A79A2F24E6010C00866132 /* AppDelegate.swift in Sources */,
+				A2689CA824EDDA76002D8C72 /* OnboardingCollectionViewCell.swift in Sources */,
+				A2D9744924EDAF1300C88C34 /* Forms.swift in Sources */,
+				A2D9744724EDAEBF00C88C34 /* UpdateDataDelegate.swift in Sources */,
 				A2A79A3124E6010C00866132 /* SceneDelegate.swift in Sources */,
+				A25D9B8324EAAED500E93D5F /* Task.swift in Sources */,
+				A22C016924F067D900986E7F /* FileController.swift in Sources */,
+				A25D9B8924EABE4E00E93D5F /* MyTasksViewController.swift in Sources */,
+				A23CD51B24F1D85F00AC7886 /* ManageTaskDelegate.swift in Sources */,
+				A2CE3C1924EC1447001634FF /* NewtaskViewController.swift in Sources */,
+				A22C016424EFEDAF00986E7F /* StatusTimer.swift in Sources */,
+				A275454224EF338E00E2D9BE /* TimerView.swift in Sources */,
+				A2CE3C1724EC1399001634FF /* NewTaskView.swift in Sources */,
+				A275453F24EEAFE400E2D9BE /* TimeTaskView.swift in Sources */,
+				A2689CA624EDDA2C002D8C72 /* OnboardingViewController.swift in Sources */,
+				A275453D24EEAE0300E2D9BE /* TimeTaskViewController.swift in Sources */,
+				A23CD51724F1C40500AC7886 /* NoneTaskView.swift in Sources */,
+				A2689CAA24EDDDC7002D8C72 /* OnBoarding.swift in Sources */,
+				A2CE3C1524EC05FD001634FF /* BoredApiError.swift in Sources */,
+				A2D9744424ED639C00C88C34 /* NewTaskTableViewCell.swift in Sources */,
+				A2CE3C1C24EC90C2001634FF /* NewTaskDelegate.swift in Sources */,
+				A2CE3C1224EC0149001634FF /* BoredAPI.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,14 +462,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A2A79A3424E6010C00866132 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A2A79A3524E6010C00866132 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A2A79A3924E6010F00866132 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
