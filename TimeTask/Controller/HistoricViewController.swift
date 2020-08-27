@@ -34,11 +34,15 @@ class HistoricViewController: UIViewController {
         self.tablewView.tableView.reloadData()
     }
 
+    override func loadView() {
+        super.loadView()
+        self.view = tablewView
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupNavigationBar()
-        self.view = tablewView
     }
 
     private func getTasks() {

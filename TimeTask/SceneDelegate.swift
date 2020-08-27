@@ -22,16 +22,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         //(see `application:configurationForConnectingSceneSession` instead).
         guard let windownScene = (scene as? UIWindowScene) else { return }
 
-        let hasSeenOnboard = UserDefaults.standard.bool(forKey: "hasSeenOnboard")
-
         window = UIWindow(frame: windownScene.coordinateSpace.bounds)
         window?.windowScene = windownScene
 
-        if !hasSeenOnboard {
-            window?.rootViewController = OnboardingViewController()
-        } else {
-            window?.rootViewController = TabBarController()
-        }
+        window?.rootViewController = Router.maincController()
         window?.makeKeyAndVisible()
 
         guard let _ = (scene as? UIWindowScene) else { return }

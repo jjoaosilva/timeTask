@@ -43,7 +43,7 @@ class TaskTableViewCell: UITableViewCell {
     var indexPath: IndexPath = IndexPath()
     weak var delegate: ManageTaskDelegate?
     var isEditable = true
-    
+
     override func prepareForReuse() {
         label.text = nil
     }
