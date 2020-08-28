@@ -29,6 +29,11 @@
 		A2A79A3B24E6010F00866132 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2A79A3924E6010F00866132 /* LaunchScreen.storyboard */; };
 		A2A79A4624E6011000866132 /* TimeTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A4524E6011000866132 /* TimeTaskTests.swift */; };
 		A2A79A5124E6011000866132 /* TimeTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2A79A5024E6011000866132 /* TimeTaskUITests.swift */; };
+		A2C0DAFF24F68F130056B935 /* HIstoricTasks.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C0DAFE24F68F130056B935 /* HIstoricTasks.swift */; };
+		A2C3E96224F54EFD0005ECE1 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3E96124F54EFD0005ECE1 /* TabBarController.swift */; };
+		A2C3E96424F552370005ECE1 /* HistoricViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3E96324F552370005ECE1 /* HistoricViewController.swift */; };
+		A2C3E96624F558690005ECE1 /* HistoricView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C3E96524F558690005ECE1 /* HistoricView.swift */; };
+		A2C4817924F7F5BA00EE8691 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2C4817824F7F5BA00EE8691 /* Router.swift */; };
 		A2CE3C1224EC0149001634FF /* BoredAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1124EC0149001634FF /* BoredAPI.swift */; };
 		A2CE3C1524EC05FD001634FF /* BoredApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1424EC05FD001634FF /* BoredApiError.swift */; };
 		A2CE3C1724EC1399001634FF /* NewTaskView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2CE3C1624EC1399001634FF /* NewTaskView.swift */; };
@@ -85,6 +90,11 @@
 		A2A79A4C24E6011000866132 /* TimeTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TimeTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2A79A5024E6011000866132 /* TimeTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeTaskUITests.swift; sourceTree = "<group>"; };
 		A2A79A5224E6011000866132 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A2C0DAFE24F68F130056B935 /* HIstoricTasks.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HIstoricTasks.swift; sourceTree = "<group>"; };
+		A2C3E96124F54EFD0005ECE1 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		A2C3E96324F552370005ECE1 /* HistoricViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricViewController.swift; sourceTree = "<group>"; };
+		A2C3E96524F558690005ECE1 /* HistoricView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoricView.swift; sourceTree = "<group>"; };
+		A2C4817824F7F5BA00EE8691 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A2CE3C1124EC0149001634FF /* BoredAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredAPI.swift; sourceTree = "<group>"; };
 		A2CE3C1424EC05FD001634FF /* BoredApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BoredApiError.swift; sourceTree = "<group>"; };
 		A2CE3C1624EC1399001634FF /* NewTaskView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTaskView.swift; sourceTree = "<group>"; };
@@ -130,6 +140,7 @@
 				A275453E24EEAFE400E2D9BE /* TimeTaskView.swift */,
 				A275454124EF338E00E2D9BE /* TimerView.swift */,
 				A23CD51624F1C40500AC7886 /* NoneTaskView.swift */,
+				A2C3E96524F558690005ECE1 /* HistoricView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -140,6 +151,8 @@
 				A2243B0F24E6CD6F005AB9FD /* BoredTask.swift */,
 				A25D9B8224EAAED500E93D5F /* Task.swift */,
 				A2689CA924EDDDC7002D8C72 /* OnBoarding.swift */,
+				A2C0DAFE24F68F130056B935 /* HIstoricTasks.swift */,
+				A2C4817824F7F5BA00EE8691 /* Router.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -151,6 +164,8 @@
 				A2CE3C1824EC1447001634FF /* NewtaskViewController.swift */,
 				A2689CA524EDDA2C002D8C72 /* OnboardingViewController.swift */,
 				A275453C24EEAE0300E2D9BE /* TimeTaskViewController.swift */,
+				A2C3E96124F54EFD0005ECE1 /* TabBarController.swift */,
+				A2C3E96324F552370005ECE1 /* HistoricViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -404,7 +419,9 @@
 				A23CD51324F1B2DD00AC7886 /* ManageFileTasks.swift in Sources */,
 				A25D9B8724EAB19E00E93D5F /* TaskTableViewCell.swift in Sources */,
 				A22C016624F03EFB00986E7F /* TimeDelegate.swift in Sources */,
+				A2C3E96224F54EFD0005ECE1 /* TabBarController.swift in Sources */,
 				A2243B1024E6CD6F005AB9FD /* BoredTask.swift in Sources */,
+				A2C4817924F7F5BA00EE8691 /* Router.swift in Sources */,
 				A2A79A2F24E6010C00866132 /* AppDelegate.swift in Sources */,
 				A2689CA824EDDA76002D8C72 /* OnboardingCollectionViewCell.swift in Sources */,
 				A2D9744924EDAF1300C88C34 /* Forms.swift in Sources */,
@@ -416,6 +433,7 @@
 				A23CD51B24F1D85F00AC7886 /* ManageTaskDelegate.swift in Sources */,
 				A2CE3C1924EC1447001634FF /* NewtaskViewController.swift in Sources */,
 				A22C016424EFEDAF00986E7F /* StatusTimer.swift in Sources */,
+				A2C3E96624F558690005ECE1 /* HistoricView.swift in Sources */,
 				A275454224EF338E00E2D9BE /* TimerView.swift in Sources */,
 				A2CE3C1724EC1399001634FF /* NewTaskView.swift in Sources */,
 				A275453F24EEAFE400E2D9BE /* TimeTaskView.swift in Sources */,
@@ -426,7 +444,9 @@
 				A2CE3C1524EC05FD001634FF /* BoredApiError.swift in Sources */,
 				A2D9744424ED639C00C88C34 /* NewTaskTableViewCell.swift in Sources */,
 				A2CE3C1C24EC90C2001634FF /* NewTaskDelegate.swift in Sources */,
+				A2C0DAFF24F68F130056B935 /* HIstoricTasks.swift in Sources */,
 				A2CE3C1224EC0149001634FF /* BoredAPI.swift in Sources */,
+				A2C3E96424F552370005ECE1 /* HistoricViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

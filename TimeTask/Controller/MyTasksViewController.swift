@@ -31,9 +31,18 @@ class MyTasksViewController: UIViewController {
         }
     }
 
+    var date: String = {
+        let date = Date()
+        let format = DateFormatter()
+        format.dateFormat = "dd-MM-yyyy"
+        let formattedDate = format.string(from: date)
+        return formattedDate
+    }()
+
     override func loadView() {
         super.loadView()
 
+        createMockTasks()
         getTasksFileManager()
 
         setup()
@@ -42,8 +51,13 @@ class MyTasksViewController: UIViewController {
         configureView()
     }
 
+    private func createMockTasks() {
+        _ = ManageFileTasks.createMockTasks(date: self.date)
+    }
+
     private func getTasksFileManager() {
-        let tasks = ManageFileTasks.readMealDataFromFile()
+        print("oka")
+        let tasks = ManageFileTasks.readTodayTasksFromFile()
 
         if let tasks = tasks {
             self.tasks = tasks
@@ -96,7 +110,7 @@ class MyTasksViewController: UIViewController {
         tableView.beginUpdates()
         let task = tasks.remove(at: indexPath.row )
 
-        if ManageFileTasks.updateMealDataFile(data: tasks) != nil {
+        if ManageFileTasks.updateTasksDataFile(data: tasks, date: self.date) != nil {
             tableView.deleteRows(at: [indexPath], with: .right)
         } else {
             self.tasks.insert(task, at: indexPath.row)
@@ -155,7 +169,7 @@ extension MyTasksViewController: NewTaskDelegate {
         self.tableView.beginUpdates()
         self.tasks.insert(with, at: 0)
 
-        if ManageFileTasks.updateMealDataFile(data: tasks)  != nil {
+        if ManageFileTasks.updateTasksDataFile(data: tasks, date: self.date)  != nil {
             self.tableView.insertRows(at: [IndexPath(row: 0, section: 0)], with: .left)
         } else {
             self.tasks.remove(at: 0)
@@ -167,6 +181,6 @@ extension MyTasksViewController: NewTaskDelegate {
 extension MyTasksViewController: ManageTaskDelegate {
     func manageTask(indexPath: IndexPath, task: Task) {
         self.tasks[indexPath.row] = task
-        _ = ManageFileTasks.updateMealDataFile(data: tasks)
+        _ = ManageFileTasks.updateTasksDataFile(data: tasks, date: self.date)
     }
 }

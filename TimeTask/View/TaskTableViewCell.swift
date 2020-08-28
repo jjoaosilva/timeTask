@@ -42,6 +42,7 @@ class TaskTableViewCell: UITableViewCell {
     var status: Task = Task(activity: "", description: "", check: false)
     var indexPath: IndexPath = IndexPath()
     weak var delegate: ManageTaskDelegate?
+    var isEditable = true
 
     override func prepareForReuse() {
         label.text = nil
@@ -80,9 +81,11 @@ class TaskTableViewCell: UITableViewCell {
     }
 
     @objc private func checkButtonWasTapped() {
-        status.check = !status.check
-        setupMarkLayout()
-        self.delegate?.manageTask(indexPath: self.indexPath, task: self.status)
+        if self.isEditable {
+            status.check = !status.check
+            setupMarkLayout()
+            self.delegate?.manageTask(indexPath: self.indexPath, task: self.status)
+        }
     }
 
     private func setupMarkLayout() {
@@ -103,10 +106,11 @@ class TaskTableViewCell: UITableViewCell {
         }
     }
 
-    func configure(with task: Task, indexPath: IndexPath) {
+    func configure(with task: Task, indexPath: IndexPath, isEditable: Bool = true) {
         self.label.text = task.activity
         self.status = task
         self.indexPath = indexPath
+        self.isEditable = isEditable
 
         setupMarkLayout()
     }

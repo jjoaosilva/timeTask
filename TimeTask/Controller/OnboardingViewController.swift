@@ -94,16 +94,10 @@ class OnboardingViewController: UIViewController {
 
     func presentNewScreen() {
         UserDefaults.standard.set(1, forKey: "hasSeenOnboard")
-        let destinity = MyTasksViewController()
+        let destinity = TabBarController()
+        destinity.modalPresentationStyle = .fullScreen
 
-        let navigation = UINavigationController()
-        navigation.navigationBar.barTintColor = .systemBackground
-        navigation.navigationBar.isTranslucent = true
-        navigation.navigationBar.shadowImage = UIImage()
-        navigation.viewControllers = [destinity]
-
-        navigation.modalPresentationStyle = .fullScreen
-        self.present(navigation, animated: true, completion: nil)
+        self.present(destinity, animated: true, completion: nil)
     }
 }
 
