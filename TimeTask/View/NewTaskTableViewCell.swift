@@ -49,6 +49,7 @@ class NewTaskTableViewCell: UITableViewCell {
     func configure(with placeholder: String, identifier: Forms) {
         titleTextField.placeholder = placeholder
         self.identifier = identifier
+        self.contentView.isUserInteractionEnabled = false // not interact with cell, and yes with textfield
     }
 
     @objc func updateTextField(textField: UITextField) {
