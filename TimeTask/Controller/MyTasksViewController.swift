@@ -56,7 +56,6 @@ class MyTasksViewController: UIViewController {
     }
 
     private func getTasksFileManager() {
-        print("oka")
         let tasks = ManageFileTasks.readTodayTasksFromFile()
 
         if let tasks = tasks {
