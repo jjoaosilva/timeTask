@@ -28,7 +28,7 @@ Esse repositório foi criado em resposta a um desafio de duas semanas para criar
 
 * **José João Silva** - [jjoaosilva](https://github.com/jjoaosilva/)
 
-> Sou estudante e bolsista da Apple Developer Academy no IFCE.
+> Sou estudante e bolsista da Developer Academy no IFCE.
 
 ## Como utilizar
 
